@@ -10,13 +10,64 @@
         <fieldset>
             <label for="data">Data:</label>
             <input type="date">
-        </fieldset>
+        </fieldset><br>
+        <fieldset>  
+            <legend>Dados de Acesso:</legend>
+            <label for="usuario">Usuário:</label><br>
+            <input type="text" id="usuario" name="usuario"><br>
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha"><br>
+        </fieldset><br>
         <fieldset>
-            <label for="uname">Usuário:</label><br>
-            <input type="text" id="uname" name="uname"><br>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha">
-        </fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" id="endereco" name="endereco"><br>
+            <label for="numero">Número:</label><br>
+            <input type="number" id="numero" name="numero"><br>
+            <label for="complemento">Complemento:</label><br>
+            <input type="text" id="complemento" name="complemento"><br>
+            <input list="cidade" name="cidade">
+            <datalist id="cidade">
+                <option value="Sorocaba"></option>
+                <option value="Itu"></option>
+                <option value="Ibiúna"></option>
+                <option value="Mairinque"></option>
+                <option value="Alumínio"></option>
+            </datalist><br>
+            <label for="estado">Estado:</label><br>
+            <select name="estado" id="estado">
+                <option value="São Paulo"></option>
+                <option value="Minas Gerais"></option>
+                <option value="Rio de Janeiro"></option>
+                <option value="Espírito Santo"></option>
+                <option value="Rio Grande do Sul"></option>
+            </select><br>
+            <label for="cep">CEP:</label><br>
+            <input type="number" id="cep" name="cep"><br>
+            <input type="radio" id="masculino" name="genero" value="MASCULINO" checked>
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="genero" value="FEMININO">
+            <label for="feminino">Feminino</label><br>
+            <input type="radio" id="nulo" name="genero" value="NULO">
+            <label for="nulo">Nulo</label><br>
+            <input type="checkbox" id="curso1" name="curso1" value="ADS">
+            <label for="curso1">ADS</label><br>
+            <input type="checkbox" id="curso2" name="curso2" value="Jogos">
+            <label for="curso2">Jogos</label><br>
+            <input type="checkbox" id="curso3" name="curso3" value="Gestão de TI">
+            <label for="curso3">Gestão de TI</label><br>
+            <input type="checkbox" id="curso4" name="curso4" value="Banco de Dados">
+            <label for="curso4">Banco de Dados</label><br>
+            <input type="radio" id="presencial" name="modelo" value="PRESENCIAL">
+            <label for="presencial">Presencial</label><br>
+            <input type="radio" id="ead" name="modelo" value="EAD">
+            <label for="ead">EAD</label><br>
+            <input type="radio" id="spresencial" name="modelo" value="SEMIPRESENCIAL">
+            <label for="spresencial">Semi-Presencial</label><br>
+        </fieldset><br>
+        <input type="submit" value="enviar">
         </form>
 </body>
 </html>
